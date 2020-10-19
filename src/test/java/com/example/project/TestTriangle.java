@@ -90,7 +90,7 @@ public class TestTriangle {
         String description = "testing area of degenerate triangle";
         try {
             Triangle myTriangle = new Triangle();
-            assertEquals(0.0, myTriangle.area(), 0.01);
+            assertEquals(0.0, myTriangle.getArea(), 0.01);
             System.out.println(description + " - passed");
         } catch (AssertionError e) {
             System.out.println(description + " - failed");
@@ -103,7 +103,7 @@ public class TestTriangle {
         String description = "testing area of basic right triangle";
         try {
             Triangle myTriangle = new Triangle(0, 0, 1, 0, 0, 1);
-            assertEquals(0.5, myTriangle.area(), 0.01);
+            assertEquals(0.5, myTriangle.getArea(), 0.01);
             System.out.println(description + " - passed");
         } catch (AssertionError e) {
             System.out.println(description + " - failed");
@@ -116,7 +116,7 @@ public class TestTriangle {
         String description = "testing perimeter of degenerate triangle";
         try {
             Triangle myTriangle = new Triangle();
-            assertEquals(0.0, myTriangle.perimeter(), 0.01);
+            assertEquals(0.0, myTriangle.getPerimeter(), 0.01);
             System.out.println(description + " - passed");
         } catch (AssertionError e) {
             System.out.println(description + " - failed");
@@ -129,7 +129,7 @@ public class TestTriangle {
         String description = "testing perimeter of basic right triangle";
         try {
             Triangle myTriangle = new Triangle(0, 0, 1, 0, 0, 1);
-            assertEquals(3.4142, myTriangle.perimeter(), 0.01);
+            assertEquals(3.4142, myTriangle.getPerimeter(), 0.01);
             System.out.println(description + " - passed");
         } catch (AssertionError e) {
             System.out.println(description + " - failed");
